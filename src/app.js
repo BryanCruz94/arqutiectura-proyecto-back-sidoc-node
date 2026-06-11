@@ -28,7 +28,7 @@ app.get('/actuator/health', (req, res) => {
 
 app.use(checkJwt);
 
-app.use('/cedmt/sidoc/api/node/chat', chatRoutes);
+app.use('/cedmt/sidoc/node/chat', chatRoutes);
 
 app.use((req, res) => {
   res.status(404).json({
